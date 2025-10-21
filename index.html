@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taqina - AI-Powered Medical Solutions</title>
+    <title>Taqina - AI-Powered Solutions for Healthcare & Education</title>
     <style>
         * {
             margin: 0;
@@ -209,6 +209,10 @@
             font-size: 1.5rem;
         }
 
+        .product-card.education .product-icon {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+        }
+
         .product-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -218,6 +222,16 @@
         .product-card p {
             color: var(--text-secondary);
             line-height: 1.6;
+        }
+
+        .product-card ul {
+            text-align: left;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .product-card li {
+            margin-bottom: 0.5rem;
         }
 
         /* Features */
@@ -354,7 +368,7 @@
             }
         }
 
-        /* Medical Heart Icon */
+        /* Icons */
         .medical-heart {
             position: relative;
             width: 100%;
@@ -362,7 +376,7 @@
         }
 
         .medical-heart::before {
-            content: '❤️';
+            content: '🤖';
             position: absolute;
             top: 50%;
             left: 50%;
@@ -389,6 +403,26 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        .status-live {
+            background: linear-gradient(45deg, var(--accent), var(--heartbeat));
+            color: white;
+        }
+
+        .status-coming {
+            background: var(--bg-surface);
+            color: var(--orange);
+            border: 1px solid var(--orange);
+        }
     </style>
 </head>
 <body>
@@ -411,9 +445,9 @@
                 <div class="medical-heart"></div>
             </div>
             <h1>TAQINA</h1>
-            <p class="subtitle">Revolutionizing Healthcare with AI-Powered Medical Solutions</p>
+            <p class="subtitle">AI-Powered Solutions for Healthcare & Education</p>
             <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                We develop cutting-edge artificial intelligence applications that transform how medical professionals and patients interact with healthcare data.
+                We develop cutting-edge artificial intelligence applications that transform healthcare diagnostics and educational experiences through innovative technology.
             </p>
             <a href="#products" class="cta-button">Explore Our Solutions</a>
         </div>
@@ -425,22 +459,40 @@
             <div class="product-card fade-in">
                 <div class="product-icon">🏥</div>
                 <h3>Labify</h3>
+                <span class="status-badge status-live">Live on Play Store</span>
                 <p>AI-powered medical report analysis application. Upload your medical reports and get instant, AI-generated insights and explanations. Designed for educational purposes to help users better understand their health data.</p>
                 <br>
                 <p><strong>Features:</strong></p>
-                <ul style="text-align: left; color: var(--text-secondary); margin-top: 0.5rem;">
+                <ul>
                     <li>OCR text extraction from medical images</li>
                     <li>Natural language processing for medical terms</li>
                     <li>Instant AI-powered analysis</li>
                     <li>Secure, privacy-first processing</li>
                 </ul>
             </div>
+            
+            <div class="product-card education fade-in">
+                <div class="product-icon">📚</div>
+                <h3>Skoll AI - Study Helper</h3>
+                <span class="status-badge status-live">Live on Play Store</span>
+                <p>Your AI-powered academic companion. Transform your study materials into interactive learning experiences with intelligent tools designed for exam preparation and conceptual mastery.</p>
+                <br>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Generate MCQs from study materials</li>
+                    <li>Step-by-step math problem solver</li>
+                    <li>Automatic flashcard creation</li>
+                    <li>Handwriting digitization with OCR</li>
+                    <li>Concept explanations and analogies</li>
+                    <li>Answer grading with detailed feedback</li>
+                </ul>
+            </div>
+            
             <div class="product-card fade-in">
                 <div class="product-icon">🔬</div>
-                <h3>Future Medical AI</h3>
-                <p>We're continuously developing new AI solutions for healthcare. From diagnostic assistance to treatment recommendations, our upcoming products will further revolutionize medical technology.</p>
-                <br>
-                <p style="color: var(--accent); font-style: italic;">Coming Soon</p>
+                <h3>Future Innovations</h3>
+                <span class="status-badge status-coming">Coming Soon</span>
+                <p>We're continuously developing new AI solutions for healthcare and education. From advanced diagnostic assistance to personalized learning paths, our upcoming products will further revolutionize technology in these critical sectors.</p>
             </div>
         </div>
     </section>
@@ -451,22 +503,32 @@
             <div class="feature fade-in">
                 <div class="feature-icon">🤖</div>
                 <h3>AI-Powered</h3>
-                <p>State-of-the-art artificial intelligence algorithms trained on medical data</p>
+                <p>State-of-the-art Google Gemini AI technology for accurate analysis and intelligent insights</p>
             </div>
             <div class="feature fade-in">
                 <div class="feature-icon">🔒</div>
                 <h3>Privacy First</h3>
-                <p>Your data is never stored. All processing happens securely and temporarily</p>
+                <p>Your data is processed securely and temporarily. Images are never permanently stored</p>
             </div>
             <div class="feature fade-in">
                 <div class="feature-icon">⚡</div>
                 <h3>Instant Results</h3>
-                <p>Get AI-powered insights in seconds, not hours</p>
+                <p>Get AI-powered insights and solutions in seconds, not hours</p>
             </div>
             <div class="feature fade-in">
                 <div class="feature-icon">🎓</div>
                 <h3>Educational Focus</h3>
-                <p>Designed to help users understand medical information better</p>
+                <p>Designed to empower users with knowledge and understanding</p>
+            </div>
+            <div class="feature fade-in">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile-First</h3>
+                <p>Optimized for Android devices with intuitive, user-friendly interfaces</p>
+            </div>
+            <div class="feature fade-in">
+                <div class="feature-icon">🌍</div>
+                <h3>Accessible</h3>
+                <p>Making advanced AI technology available to everyone, everywhere</p>
             </div>
         </div>
     </section>
@@ -475,70 +537,29 @@
         <h2>Legal & Compliance</h2>
         <div class="legal-grid">
             <div class="legal-card fade-in">
-                <h3>Privacy Policy</h3>
-                <p>We take your privacy seriously. Our comprehensive privacy policy outlines how we collect, use, and protect your information in compliance with Google Play Store requirements.</p>
+                <h3>Privacy Policies</h3>
+                <p>We take your privacy seriously. Our comprehensive privacy policies outline how we collect, use, and protect your information in compliance with Google Play Store requirements and international data protection regulations.</p>
                 <br>
-                <a href="#privacy-details">Read Privacy Policy</a>
+                <a href="/privacy-policy.html" target="_blank">Skoll AI Privacy Policy →</a><br><br>
+                <a href="/labify-privacy-policy.html" target="_blank">Labify Privacy Policy →</a>
             </div>
             <div class="legal-card fade-in">
                 <h3>Terms of Service</h3>
-                <p>Clear terms governing the use of our applications and services, including user responsibilities and limitations.</p>
+                <p>Clear terms governing the use of our applications and services, including user responsibilities, limitations, and usage guidelines.</p>
                 <br>
-                <a href="#terms-details">Read Terms of Service</a>
+                <a href="/terms-of-service.html" target="_blank">Read Terms of Service →</a>
             </div>
             <div class="legal-card fade-in">
-                <h3>Medical Disclaimer</h3>
-                <p>Important information about the educational nature of our applications and the importance of consulting healthcare professionals.</p>
+                <h3>Disclaimers</h3>
+                <p>Important information about the educational nature of our applications and the importance of consulting qualified professionals.</p>
                 <br>
-                <a href="#disclaimer-details">Read Medical Disclaimer</a>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
+                    <strong>Medical Disclaimer:</strong> Labify is for educational purposes only and not a substitute for professional medical advice.<br><br>
+                    <strong>Educational Disclaimer:</strong> Skoll AI is a study aid and should complement, not replace, traditional learning methods.
+                </p>
             </div>
         </div>
     </section>
-
-    <!-- Detailed Legal Sections (Hidden by default, can be shown with JavaScript) -->
-    <div id="privacy-details" style="display: none;">
-        <div class="section">
-            <h2>Privacy Policy</h2>
-            <div style="background: var(--bg-secondary); padding: 2rem; border-radius: 15px; text-align: left;">
-                <p><strong>Last updated: January 2025</strong></p>
-                
-                <h3 style="color: var(--primary); margin-top: 2rem;">Information We Collect</h3>
-                <ul>
-                    <li>App usage analytics (Firebase Analytics)</li>
-                    <li>Device information for ads (Google AdMob)</li>
-                    <li>No personal information is collected or stored</li>
-                </ul>
-
-                <h3 style="color: var(--primary); margin-top: 2rem;">Medical Images</h3>
-                <ul>
-                    <li>Images uploaded are processed temporarily</li>
-                    <li>Images are NOT saved or stored on our servers</li>
-                    <li>Images are deleted immediately after analysis</li>
-                </ul>
-
-                <h3 style="color: var(--primary); margin-top: 2rem;">Third-Party Services</h3>
-                <ul>
-                    <li>Firebase Analytics: Anonymous usage data</li>
-                    <li>Google AdMob: Ad serving and analytics</li>
-                    <li>Google Cloud Platform: Image processing</li>
-                </ul>
-
-                <h3 style="color: var(--primary); margin-top: 2rem;">Data Security</h3>
-                <ul>
-                    <li>All data transmission is encrypted</li>
-                    <li>No personal health information is stored</li>
-                    <li>Images are processed in secure cloud environment</li>
-                </ul>
-
-                <h3 style="color: var(--primary); margin-top: 2rem;">Your Rights</h3>
-                <ul>
-                    <li>You can request data deletion anytime</li>
-                    <li>No account required, no data tied to identity</li>
-                    <li>Contact us for any privacy concerns</li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
     <section id="contact" class="section">
         <h2>Contact Us</h2>
@@ -546,7 +567,9 @@
             <h3>Get in Touch</h3>
             <p>For questions, support, or privacy concerns:</p>
             <br>
-            <p><strong>Email:</strong> <a href="mailto:labify@taqina.store">labify@taqina.store</a></p>
+            <p><strong>General Inquiries:</strong> <a href="mailto:contact@taqina.store">contact@taqina.store</a></p>
+            <p><strong>Labify Support:</strong> <a href="mailto:labify@taqina.store">labify@taqina.store</a></p>
+            <p><strong>Skoll AI Support:</strong> <a href="mailto:support@prepmasterai.app">support@prepmasterai.app</a></p>
             <br>
             <p style="color: var(--text-secondary); font-size: 0.9rem;">
                 We typically respond within 24-48 hours
@@ -557,13 +580,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#privacy-details">Privacy Policy</a>
-                <a href="#terms-details">Terms of Service</a>
-                <a href="#disclaimer-details">Medical Disclaimer</a>
+                <a href="/privacy-policy.html">Privacy Policies</a>
+                <a href="/terms-of-service.html">Terms of Service</a>
+                <a href="#legal">Legal Information</a>
                 <a href="#contact">Contact</a>
             </div>
-            <p style="color: var(--text-tertiary);">
-                &copy; 2025 Taqina. All rights reserved. | For educational purposes only.
+            <p style="color: var(--text-tertiary); margin-top: 1rem;">
+                &copy; 2025 Taqina. All rights reserved.
+            </p>
+            <p style="color: var(--text-tertiary); font-size: 0.9rem; margin-top: 0.5rem;">
+                Our applications are for educational purposes only. Always consult qualified professionals for medical advice or academic guidance.
             </p>
         </div>
     </footer>
@@ -599,26 +625,6 @@
 
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
-        });
-
-        // Toggle legal sections
-        document.querySelectorAll('a[href^="#"][href$="-details"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                // Hide all detail sections
-                document.querySelectorAll('[id$="-details"]').forEach(section => {
-                    section.style.display = 'none';
-                });
-                
-                // Show the target section
-                if (targetElement) {
-                    targetElement.style.display = 'block';
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
         });
     </script>
 </body>
